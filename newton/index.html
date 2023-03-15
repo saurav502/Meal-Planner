@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal planner</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="main-container">
+
+        <nav>
+            <div class="logo">
+                <img src="./img/logo.jpeg" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Meal Plan</a></li>
+                    <li><a href="">Recipe</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <button class="login-btn">Login</button>
+            </div>
+        </nav>
+
+        <div id="user-form">
+            <form id="info">
+                <div>
+                    <input type="text" id="height" placeholder="Enter height in CM" required />
+                    <input type="text" id="weight" placeholder="Enter weight in KG" required />
+                    <input type="number" id="age" placeholder="Enter age" required max="100" min="1" />
+                </div>
+                <div>
+                    <select id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <select name="" id="Activity">
+                        <option value="light">Light</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="high">active</option>
+                    </select>
+                </div>
+                <button id="sub" type="button">Generate meal</button>
+            </form>
+        </div>
+        <div id="display"></div>
+        <div id="recipi-container">
+            <div id="recipe_detail">Steps:</div>
+            <div id="ingredients_detail">Ingredients:</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

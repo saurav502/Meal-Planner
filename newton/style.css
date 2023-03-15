@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: rgba(200, 201, 195, 0.957);
+
+}
+
+nav {
+    padding: 15px 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background: #464646;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #ff0000;
+    transition: all .3s ease;
+}
+
+.login-btn {
+    padding: 5px 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+#user-form {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#info select {
+    position: relative;
+    top: 1.5rem;
+}
+
+form {
+    grid-template-columns: 10rem 10rem 12rem;
+    text-align: center;
+    position: relative;
+    top: 2rem;
+}
+
+.card>h3 {
+    padding: 10px;
+    color: #fff;
+}
+
+form>:nth-child(4) {
+    position: relative;
+    left: 50%;
+}
+
+form>:nth-child(5) {
+    position: relative;
+    left: 50%;
+}
+
+input {
+    margin: 10px 10px;
+    font-weight: 500;
+    height: 3rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    width: 11rem;
+    padding: 1.5rem;
+    border: none;
+    background-color: rgb(131, 131, 131);
+    text-align: center;
+    color: black;
+}
+
+select {
+    margin: 0 10px;
+    height: 3rem;
+    width: 159px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    margin: 10px 10px;
+    background-color: rgb(131, 131, 131);
+    text-align: center;
+    color: black;
+}
+
+#display {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 8% 15%;
+    flex-wrap: wrap;
+}
+
+#sub:hover {
+    transition: all .4s ease;
+    color: white;
+    background-color: red;
+}
+
+#sub {
+    position: relative;
+    bottom: -50px;
+    background-color: rgb(169, 11, 11);
+    font-size: 20px;
+    color: white;
+    border: none;
+    width: 12rem;
+    height: 3.3rem;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+
+.meals {
+    height: 30rem;
+    margin: 30px 20px;
+}
+
+
+#a {
+    text-align: center;
+    background-color: rgb(181, 255, 233);
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+.card {
+    background-color: rgba(237, 25, 25, 0.866);
+    border-radius: 8px;
+    text-align: center;
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 6px -1px rgb(176, 127, 127);
+}
+
+
+img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.details {
+    text-align: center;
+    font-size: 1rem;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+h4 {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 13, 0, 0.5);
+    color: white;
+}
+
+h5 {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(249, 249, 247);
+}
+
+#recipe {
+    font-size: 18px;
+    padding: 5px 8px;
+    background-color: rgb(159, 159, 159);
+    margin: 10px auto;
+    border-radius: 40px;
+}
+
+/* #recipe {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    margin-top: 90px;
+} */
+
+#recipe_detail {
+    text-align: left;
+    width: 50%;
+    padding: 50px;
+    line-height: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#ingredients_detail {
+    text-align: left;
+    width: 50%;
+    padding: 50px;
+    line-height: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+
+#ingredients_detail p {
+    margin: 20px 0;
+}
+
+#recipe_detail li {
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        padding: 0 20px;
+        flex-wrap: wrap;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+    }
+
+    .info {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info {
+        margin-left: 74px;
+        grid-template-columns: 10rem 10rem 12rem;
+    }
+
+    #recipi-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        position: relative;
+        top: -1rem;
+    }
+}
